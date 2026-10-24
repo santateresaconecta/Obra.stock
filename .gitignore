@@ -1,0 +1,35 @@
+# =============================================================================
+# ObraStock — o que NÃO entra no repositório
+# =============================================================================
+# Cuidado ao acrescentar linhas aqui: a versão anterior deste arquivo excluía
+# os testes, o mock e a documentação. Como o envio pela página do GitHub
+# ignora o .gitignore, os arquivos subiam assim mesmo — e sumiriam no dia em
+# que alguém usasse o git pela linha de comando. Este arquivo agora reflete
+# exatamente o que o repositório deve conter.
+#
+# O que FICA versionado, de propósito:
+#   test-*.js, mock/, serve-headers.js  -> a bateria de testes é parte do projeto
+#   docs/                               -> os guias
+#   supabase/                           -> os scripts do banco
+# =============================================================================
+
+# Dependências e caches (reinstaláveis)
+node_modules/
+package-lock.json
+.npm/
+.cache/
+.config/
+.local/
+.wrangler/
+
+# Capturas geradas pelos testes
+pv/
+
+# Logs e lixo de sistema
+*.log
+.DS_Store
+Thumbs.db
+.sudo_as_admin_successful
+.bash_history
+.profile
+.bashrc
